@@ -1,13 +1,15 @@
-# FootMedix — Clinic Landing Page
+# FootMedix — Clinic Website (Next.js)
 
-A modern, responsive landing page for **FootMedix**, a chiropody (foot care) clinic
-in Scarborough, Toronto.
+A modern, responsive website for **FootMedix**, a chiropody (foot care) clinic
+in Scarborough, Toronto. Built with **Next.js 14** (App Router) and ready to
+deploy on **Vercel**.
 
-## About
+## Tech stack
 
-FootMedix is a chiropody clinic led by Emily, a chiropodist registered with the
-College of Chiropodists of Ontario. This is a fresh, professional rebuild of the
-clinic's outdated website.
+- **Next.js 14** (App Router)
+- **React 18**
+- Plain CSS (`app/globals.css`) — no UI framework
+- Google Fonts (Plus Jakarta Sans + Lora) via `next/font` (self-hosted, no extra requests)
 
 ## Features
 
@@ -19,11 +21,47 @@ clinic's outdated website.
 - "Why choose us" highlights and insurance note
 - Contact section with embedded Google Map
 - Floating "Book Now" button on mobile
-- Scroll-reveal animations and accessible, reduced-motion friendly markup
-- Built with plain HTML, CSS and vanilla JS — no build step required
+- Scroll-reveal animations, accessible and reduced-motion friendly
 
 All **Book an Appointment** buttons link to the clinic's JaneApp booking page:
 <https://footmedix.janeapp.com/>
+
+## Project structure
+
+```
+app/
+  layout.js            Root layout, fonts & SEO metadata
+  page.js              The landing page (server component)
+  globals.css          All styling
+  components/
+    Nav.js             Sticky nav + mobile menu (client component)
+    Reveal.js          Scroll-reveal animations (client component)
+next.config.mjs
+package.json
+```
+
+## Run locally
+
+```bash
+npm install
+npm run dev        # http://localhost:3000
+```
+
+Production build:
+
+```bash
+npm run build
+npm start
+```
+
+## Deploy on Vercel
+
+1. Push this repo to GitHub.
+2. In Vercel → **Add New → Project** and import the repo.
+3. Vercel auto-detects the **Next.js** framework preset — no configuration needed.
+   - Build command: `next build` (default)
+   - Output: handled automatically
+4. Click **Deploy**.
 
 ## Clinic details
 
@@ -31,20 +69,3 @@ All **Book an Appointment** buttons link to the clinic's JaneApp booking page:
 - **Phone:** 437-990-3008
 - **Email:** footmedix1@gmail.com
 - **Booking:** https://footmedix.janeapp.com/
-
-## Run locally
-
-Just open `index.html` in a browser, or serve the folder:
-
-```bash
-python3 -m http.server 8000
-# then visit http://localhost:8000
-```
-
-## Files
-
-| File | Purpose |
-|------|---------|
-| `index.html` | Page markup and content |
-| `styles.css` | Styling, layout and responsive design |
-| `script.js`  | Mobile menu, scroll behaviour and reveal animations |

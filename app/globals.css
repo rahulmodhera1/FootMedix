@@ -20,8 +20,8 @@
   --radius:    18px;
   --radius-sm: 12px;
   --container: 1180px;
-  --font:      'Plus Jakarta Sans', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  --serif:     'Lora', Georgia, serif;
+  --font:      var(--font-jakarta), 'Plus Jakarta Sans', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  --serif:     var(--font-lora), 'Lora', Georgia, serif;
 }
 
 /* ===== Reset ===== */
