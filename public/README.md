@@ -1,39 +1,39 @@
-# Logo & static assets
+# Logo & image assets
 
-Files in this `public/` folder are served from the site root.
-For example, `public/logo.png` is available at `/logo.png`.
+Files in this `public/` folder are served from the site root, e.g.
+`public/logo.png` → `/logo.png`.
 
-## Upload your logo here
+## Logo
 
-1. Add your logo file to this folder and name it exactly:
+`public/logo.png` is shown in the header and footer. The site styles it
+automatically:
 
-   ```
-   public/logo.png
-   ```
+- **Header** (light background): the logo is rendered solid **black**.
+- **Footer** (dark background): the logo is rendered solid **white**.
 
-   (A `.png` with a **transparent background** looks best on the dark
-   navigation bar. An `.svg` works too — see note below.)
+This is done with a CSS filter, so the logo always matches the black-and-white
+theme regardless of the colour of the source file. To replace it, just upload a
+new `public/logo.png` (a transparent PNG works best).
 
-2. That's it. The site automatically picks up `/logo.png` in the header and
-   footer. No code changes are needed.
+## Chiropodist photos (team section)
 
-Until a `logo.png` is present, the site shows a styled gold "FootMedix"
-wordmark as a fallback, so nothing ever appears broken.
+To show real photos in the "Our Chiropodists" section, add:
 
-### Recommended specs
+```
+public/team/radha.jpg     → Radha Modhera
+public/team/emily.jpg     → Emily
+```
 
-- Format: **PNG with transparent background** (or SVG)
-- Height: around **120–200px** (it is displayed at ~48–52px tall and scales down crisply)
-- Keep some padding around the artwork so it isn't cropped
+Until those files exist, the site shows each chiropodist's initials in a styled
+circle, so the section always looks finished.
 
-### Want to use an SVG instead of PNG?
-
-Add `public/logo.svg`, then change the `src` in
-`app/components/Logo.js` from `/logo.png` to `/logo.svg`.
+- Format: square JPG or PNG (e.g. 600×600), head-and-shoulders works best.
+- Different filename? Update the `src` values in `app/page.js`
+  (`<Avatar src="/team/radha.jpg" ... />`).
 
 ## Uploading via GitHub (no command line)
 
-1. Open the repository on GitHub and navigate into the `public` folder.
+1. Open the repository on GitHub and navigate into `public` (or `public/team`).
 2. Click **Add file → Upload files**.
-3. Drag in your `logo.png` and commit to the
+3. Drag in your file(s) and commit to the
    `claude/wizardly-cannon-8e39p7` branch.

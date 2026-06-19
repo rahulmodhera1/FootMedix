@@ -7,7 +7,7 @@ import { useEffect } from "react";
 export default function Reveal() {
   useEffect(() => {
     const selector =
-      ".service, .why__item, .about__content, .about__media, .section__head, .infocard, .contact__info, .contact__map";
+      ".service, .why__item, .team-card, .about__content, .about__media, .section__head, .infocard, .contact__info, .contact__map";
     const els = Array.from(document.querySelectorAll(selector));
     els.forEach((el) => el.setAttribute("data-reveal", ""));
 

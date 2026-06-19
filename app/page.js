@@ -1,6 +1,7 @@
 import Nav from "./components/Nav";
 import Reveal from "./components/Reveal";
 import Logo from "./components/Logo";
+import Avatar from "./components/Avatar";
 
 const BOOK_URL = "https://footmedix.janeapp.com/";
 
@@ -110,10 +111,10 @@ export default function Home() {
       {/* Trust strip */}
       <section className="strip">
         <div className="container strip__inner">
-          <div className="strip__item"><strong>1000s</strong><span>of happy feet treated</span></div>
-          <div className="strip__item"><strong>9+</strong><span>specialized foot services</span></div>
-          <div className="strip__item"><strong>Same-week</strong><span>appointments available</span></div>
-          <div className="strip__item"><strong>Direct</strong><span>insurance receipts provided</span></div>
+          <div className="strip__item"><strong>1,798+</strong><span>patient reviews</span></div>
+          <div className="strip__item"><strong>2</strong><span>registered chiropodists</span></div>
+          <div className="strip__item"><strong>9+</strong><span>foot care services</span></div>
+          <div className="strip__item"><strong>Most</strong><span>insurance plans accepted</span></div>
         </div>
       </section>
 
@@ -223,31 +224,96 @@ export default function Home() {
             <span className="eyebrow">About FootMedix</span>
             <h2>Expert, compassionate care for your feet</h2>
             <p>
-              FootMedix is a dedicated chiropody clinic in Scarborough, Toronto, led by{" "}
-              <strong>Emily</strong>, a chiropodist registered with the College of
-              Chiropodists of Ontario. A chiropodist is a primary healthcare professional
-              who specializes in the assessment, management and prevention of diseases and
-              disorders of the foot — through therapeutic, surgical, orthotic and palliative care.
+              FootMedix is a dedicated chiropody clinic in Scarborough, Toronto, home to two
+              chiropodists registered with the College of Chiropodists of Ontario. A
+              chiropodist is a primary healthcare professional who specializes in the
+              assessment, management and prevention of diseases and disorders of the foot —
+              through therapeutic, surgical, orthotic and palliative care.
             </p>
             <p>
-              Emily has extensive experience treating podiatric nail and skin disorders,
-              conducting biomechanical and gait analyses, and providing diabetic foot care
-              and education. Every patient receives a thorough, personalized assessment and
-              a treatment plan built around their needs and lifestyle.
+              From podiatric nail and skin disorders to biomechanical and gait analyses,
+              custom orthotics and diabetic foot care, every patient receives a thorough,
+              personalized assessment and a treatment plan built around their needs and
+              lifestyle. Our goal is simple: to get you back on your feet, comfortably.
             </p>
             <ul className="about__list">
-              <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg> Registered with the College of Chiropodists of Ontario</li>
-              <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg> Personalized, patient-first treatment plans</li>
+              <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg> Two registered chiropodists in good standing</li>
+              <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg> Individualized, holistic patient-first care</li>
               <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg> Conservative and surgical treatment options</li>
               <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg> Currently accepting new patients</li>
             </ul>
-            <a className="btn btn--primary" href={BOOK_URL} target="_blank" rel="noopener">Meet Emily — Book a Visit</a>
+            <a className="btn btn--primary" href="#team">Meet Our Chiropodists</a>
+          </div>
+        </div>
+      </section>
+
+      {/* Team / Chiropodists */}
+      <section className="section" id="team">
+        <div className="container">
+          <div className="section__head">
+            <span className="eyebrow eyebrow--center">Meet the Team</span>
+            <h2>Our Chiropodists</h2>
+            <p>Both of our chiropodists are registered and in good standing with the College of Chiropodists of Ontario, with advanced training from the Michener Institute.</p>
+          </div>
+
+          <div className="grid team">
+            <article className="team-card">
+              <div className="team-card__top">
+                <Avatar src="/team/radha.jpg" initials="RM" alt="Radha Modhera, Chiropodist" />
+                <div className="team-card__name">
+                  <h3>Radha Modhera</h3>
+                  <div className="team-card__role">Chiropodist · BSc (Hons)</div>
+                </div>
+              </div>
+              <div className="team-card__creds">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
+                College of Chiropodists of Ontario
+              </div>
+              <p>
+                Radha graduated from the University of Waterloo with a Bachelor of Science in
+                Honours Kinesiology and holds an Advanced Graduate Diploma in Chiropody from the
+                Michener Institute of Education at UHN. A licensed chiropodist in good standing,
+                she is passionate about getting patients back on their feet through an
+                individualized, holistic approach to care — with a special interest in diabetic
+                foot prevention.
+              </p>
+              <a className="team-card__link" href={BOOK_URL} target="_blank" rel="noopener">
+                Book with Radha
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+              </a>
+            </article>
+
+            <article className="team-card">
+              <div className="team-card__top">
+                <Avatar src="/team/emily.jpg" initials="E" alt="Emily, Chiropodist" />
+                <div className="team-card__name">
+                  <h3>Emily</h3>
+                  <div className="team-card__role">Chiropodist · BKin</div>
+                </div>
+              </div>
+              <div className="team-card__creds">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
+                College of Chiropodists of Ontario
+              </div>
+              <p>
+                Emily completed her Bachelor of Kinesiology at the University of Toronto and a
+                Graduate Advanced Diploma of Health Sciences in Chiropody at the Michener
+                Institute for Applied Health Sciences. She has assessed and treated patients of
+                all ages at the Diabetes Education Centre at North York General Hospital and the
+                Waterloo Foot Clinic, with experience in podiatric nail and skin disorders,
+                biomechanical and gait analyses, and diabetic foot care and education.
+              </p>
+              <a className="team-card__link" href={BOOK_URL} target="_blank" rel="noopener">
+                Book with Emily
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+              </a>
+            </article>
           </div>
         </div>
       </section>
 
       {/* Why us */}
-      <section className="section" id="why">
+      <section className="section section--alt" id="why">
         <div className="container">
           <div className="section__head">
             <span className="eyebrow eyebrow--center">Why Choose FootMedix</span>
