@@ -364,7 +364,7 @@ export default function Home() {
       </section>
 
       {/* Contact */}
-      <section className="section section--alt" id="contact">
+      <section className="section" id="contact">
         <div className="container">
           <div className="section__head">
             <span className="eyebrow eyebrow--center">Get In Touch</span>
