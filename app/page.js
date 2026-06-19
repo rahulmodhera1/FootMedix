@@ -3,6 +3,7 @@ import Reveal from "./components/Reveal";
 import Logo from "./components/Logo";
 import Avatar from "./components/Avatar";
 import CountUp from "./components/CountUp";
+import ContactForm from "./components/ContactForm";
 
 const BOOK_URL = "https://footmedix.janeapp.com/";
 
@@ -427,6 +428,8 @@ export default function Home() {
               />
             </div>
           </div>
+
+          <ContactForm />
         </div>
       </section>
 
