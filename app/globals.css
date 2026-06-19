@@ -112,6 +112,8 @@ h3 { font-size: 1.18rem; font-weight: 700; }
 .nav__inner { display: flex; align-items: center; justify-content: space-between; height: 76px; }
 
 .brand { display: inline-flex; align-items: center; gap: 12px; font-size: 1.4rem; letter-spacing: .01em; }
+.brand__img { display: block; width: auto; object-fit: contain; }
+.brand__fallback { display: inline-flex; align-items: center; gap: 12px; }
 .brand__mark {
   display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%;
   background: radial-gradient(circle at 35% 30%, #2a241b, #100d0a);
