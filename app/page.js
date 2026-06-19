@@ -35,6 +35,10 @@ export default function Home() {
       {/* Hero */}
       <section className="hero" id="home">
         <div className="hero__bg" aria-hidden="true"></div>
+        <div className="hero__orbs" aria-hidden="true">
+          <span className="orb orb--a"></span>
+          <span className="orb orb--b"></span>
+        </div>
         <div className="container hero__inner">
           <div className="hero__content">
             <span className="eyebrow">Chiropody &amp; Foot Care Clinic · Scarborough</span>
@@ -88,8 +92,9 @@ export default function Home() {
                     <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
                   </span>
                   <div>
-                    <strong>Phone</strong>
-                    <a href="tel:+14379903008">437-990-3008</a>
+                    <strong>Contact</strong>
+                    <a href="tel:+14379903008">437-990-3008</a><br />
+                    <a href="mailto:footmedix1@gmail.com">footmedix1@gmail.com</a>
                   </div>
                 </li>
                 <li>
@@ -111,7 +116,6 @@ export default function Home() {
       {/* Trust strip */}
       <section className="strip">
         <div className="container strip__inner">
-          <div className="strip__item"><strong>1,798+</strong><span>patient reviews</span></div>
           <div className="strip__item"><strong>2</strong><span>registered chiropodists</span></div>
           <div className="strip__item"><strong>9+</strong><span>foot care services</span></div>
           <div className="strip__item"><strong>Most</strong><span>insurance plans accepted</span></div>
@@ -259,7 +263,7 @@ export default function Home() {
           <div className="grid team">
             <article className="team-card">
               <div className="team-card__top">
-                <Avatar src="/team/radha.jpg" initials="RM" alt="Radha Modhera, Chiropodist" />
+                <Avatar src="/team/Radha.png" initials="RM" alt="Radha Modhera, Chiropodist" />
                 <div className="team-card__name">
                   <h3>Radha Modhera</h3>
                   <div className="team-card__role">Chiropodist · BSc (Hons)</div>
@@ -285,7 +289,7 @@ export default function Home() {
 
             <article className="team-card">
               <div className="team-card__top">
-                <Avatar src="/team/emily.jpg" initials="E" alt="Emily, Chiropodist" />
+                <Avatar src="/team/Emily.png" initials="E" alt="Emily, Chiropodist" />
                 <div className="team-card__name">
                   <h3>Emily</h3>
                   <div className="team-card__role">Chiropodist · BKin</div>

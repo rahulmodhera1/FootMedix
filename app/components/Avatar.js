@@ -14,7 +14,7 @@ export default function Avatar({ src, initials, alt }) {
         initials
       ) : (
         // eslint-disable-next-line @next/next/no-img-element
-        <img src={src} alt={alt} onError={() => setFailed(true)} />
+        <img src={src} alt={alt} loading="lazy" decoding="async" onError={() => setFailed(true)} />
       )}
     </span>
   );
