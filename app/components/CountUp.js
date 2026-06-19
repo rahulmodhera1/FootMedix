@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 // Counts from 0 up to `end` when scrolled into view (ease-out), once. Respects
 // reduced-motion by showing the final value immediately.
-export default function CountUp({ end, suffix = "", duration = 1400 }) {
+export default function CountUp({ end, suffix = "", duration = 2600 }) {
   const [val, setVal] = useState(0);
   const ref = useRef(null);
   const started = useRef(false);
