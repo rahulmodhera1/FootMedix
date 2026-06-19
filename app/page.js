@@ -360,7 +360,7 @@ export default function Home() {
         <div className="container footer__inner">
           <div className="footer__brand">
             <a href="#home" className="brand brand--light">
-              <Logo height={52} light />
+              <Logo height={64} light />
             </a>
             <p>Your trusted chiropody and foot care clinic in Scarborough, Toronto. Expert care for healthier, happier feet.</p>
           </div>

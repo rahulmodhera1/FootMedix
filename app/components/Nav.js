@@ -35,7 +35,7 @@ export default function Nav() {
     <header className={`nav${scrolled ? " scrolled" : ""}`} id="nav">
       <div className="container nav__inner">
         <a href="#home" className="brand" aria-label="FootMedix home" onClick={close}>
-          <Logo height={48} />
+          <Logo height={56} />
         </a>
 
         <nav
