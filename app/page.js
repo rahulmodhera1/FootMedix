@@ -129,9 +129,6 @@ export default function Home() {
           <span className="orb orb--a"></span>
           <span className="orb orb--b"></span>
         </div>
-        <div className="floaties" aria-hidden="true">
-          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-        </div>
         <div className="container">
           <div className="section__head">
             <span className="eyebrow eyebrow--center">What We Treat</span>
