@@ -44,7 +44,7 @@
 
 /* ===== Reset ===== */
 * { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 92px; }
+html { scroll-behavior: smooth; scroll-padding-top: 110px; }
 body {
   font-family: var(--font);
   color: var(--text);
@@ -110,7 +110,7 @@ h3 { font-size: 1.18rem; font-weight: 700; letter-spacing: -.01em; }
   transition: box-shadow .25s ease, background .25s ease;
 }
 .nav.scrolled { box-shadow: 0 6px 28px rgba(18,40,44,.08); }
-.nav__inner { display: flex; align-items: center; justify-content: space-between; height: 78px; }
+.nav__inner { display: flex; align-items: center; justify-content: space-between; height: 96px; }
 
 .brand { display: inline-flex; align-items: center; gap: 12px; }
 .brand__img { display: block; width: auto; object-fit: contain; }
