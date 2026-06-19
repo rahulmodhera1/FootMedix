@@ -38,13 +38,7 @@ export default function ContactForm() {
 
   return (
     <div className="formcard">
-      <span className="eyebrow">Send Us a Message</span>
-      <h3>Have a question? Get in touch.</h3>
-      <p className="formcard__lead">
-        Fill in the form and we&apos;ll help you book or answer any questions. Your
-        message opens in your email app, ready to send to our team.
-      </p>
-
+      <h3 className="formcard__title">Send us a message</h3>
       <form className="form" onSubmit={handleSubmit}>
         <div className="form__row">
           <label className="field">
@@ -57,23 +51,18 @@ export default function ContactForm() {
           </label>
         </div>
         <label className="field">
-          <span>Phone <em>(optional)</em></span>
-          <input type="tel" name="phone" autoComplete="tel" placeholder="(437) 990-3008" />
-        </label>
-        <label className="field">
           <span>Message</span>
-          <textarea name="message" rows={5} placeholder="How can we help?" required />
+          <textarea name="message" rows={3} placeholder="How can we help?" required />
         </label>
 
-        <button type="submit" className="btn btn--primary btn--block form__submit">
+        <button type="submit" className="btn btn--primary form__submit">
           Send Message
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m22 2-7 20-4-9-9-4 20-7z" /></svg>
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m22 2-7 20-4-9-9-4 20-7z" /></svg>
         </button>
 
         {sent && (
           <p className="form__note" role="status">
-            Your email app should have opened with your message ready to send. If it
-            didn&apos;t, email us directly at{" "}
+            Your email app should have opened, ready to send. If not, email us at{" "}
             <a href={`mailto:${CLINIC_EMAIL}`}>{CLINIC_EMAIL}</a>.
           </p>
         )}
