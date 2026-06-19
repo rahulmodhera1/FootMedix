@@ -2,6 +2,7 @@ import Nav from "./components/Nav";
 import Reveal from "./components/Reveal";
 import Logo from "./components/Logo";
 import Avatar from "./components/Avatar";
+import CountUp from "./components/CountUp";
 
 const BOOK_URL = "https://footmedix.janeapp.com/";
 
@@ -116,14 +117,18 @@ export default function Home() {
       {/* Trust strip */}
       <section className="strip">
         <div className="container strip__inner">
-          <div className="strip__item"><strong>2</strong><span>registered chiropodists</span></div>
-          <div className="strip__item"><strong>9+</strong><span>foot care services</span></div>
+          <div className="strip__item"><strong><CountUp end={2} /></strong><span>registered chiropodists</span></div>
+          <div className="strip__item"><strong><CountUp end={9} suffix="+" /></strong><span>foot care services</span></div>
           <div className="strip__item"><strong>Most</strong><span>insurance plans accepted</span></div>
         </div>
       </section>
 
       {/* Services */}
-      <section className="section" id="services">
+      <section className="section has-orbs" id="services">
+        <div className="orbs orbs--soft" aria-hidden="true">
+          <span className="orb orb--a"></span>
+          <span className="orb orb--b"></span>
+        </div>
         <div className="container">
           <div className="section__head">
             <span className="eyebrow eyebrow--center">What We Treat</span>
