@@ -229,7 +229,14 @@ h3 { font-size: 1.18rem; font-weight: 700; letter-spacing: -.01em; }
 }
 
 /* ===== Services ===== */
-.services { grid-template-columns: repeat(4, 1fr); }
+.svc-group + .svc-group { margin-top: 44px; }
+.svc-group__title {
+  display: flex; align-items: center; gap: 16px; font-size: .82rem; font-weight: 700;
+  letter-spacing: .16em; text-transform: uppercase; color: var(--teal-deep); margin-bottom: 22px;
+}
+.svc-group__title::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+.services { display: flex; flex-wrap: wrap; gap: 22px; justify-content: center; }
+.services .card { flex: 1 1 240px; max-width: 286px; }
 .service__ico {
   display: grid; place-items: center; width: 54px; height: 54px; border-radius: 14px;
   background: linear-gradient(140deg, var(--teal-light), var(--teal)); color: #08272c;

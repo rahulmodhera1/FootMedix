@@ -119,7 +119,7 @@ export default function Home() {
       <section className="strip">
         <div className="container strip__inner">
           <div className="strip__item"><strong><CountUp end={2} /></strong><span>registered chiropodists</span></div>
-          <div className="strip__item"><strong><CountUp end={9} suffix="+" /></strong><span>foot care services</span></div>
+          <div className="strip__item"><strong><CountUp end={12} suffix="+" /></strong><span>foot care services</span></div>
           <div className="strip__item"><strong>Most</strong><span>insurance plans accepted</span></div>
         </div>
       </section>
@@ -137,78 +137,115 @@ export default function Home() {
             <p>From routine maintenance to specialized treatment, we care for every part of your foot health under one roof.</p>
           </div>
 
-          <div className="grid services">
-            <article className="card service">
-              <div className="service__ico">
-                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" /></svg>
-              </div>
-              <h3>General Foot Health</h3>
-              <p>Routine assessments and maintenance to keep your feet comfortable, healthy and pain-free.</p>
-            </article>
+          <div className="svc-group">
+            <h4 className="svc-group__title">Foot Treatments</h4>
+            <div className="services">
+              <article className="card service">
+                <div className="service__ico">
+                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="6" cy="6" r="3" /><circle cx="6" cy="18" r="3" /><line x1="20" y1="4" x2="8.12" y2="15.88" /><line x1="14.47" y1="14.48" x2="20" y2="20" /><line x1="8.12" y1="8.12" x2="12" y2="12" /></svg>
+                </div>
+                <h3>Nail Care</h3>
+                <p>Professional trimming and care for thick, discoloured or hard-to-manage toenails.</p>
+              </article>
 
-            <article className="card service">
-              <div className="service__ico">
-                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M9 18V5l12-2v13" /><circle cx="6" cy="18" r="3" /><circle cx="18" cy="16" r="3" /></svg>
-              </div>
-              <h3>Nail Care</h3>
-              <p>Professional trimming and management of thickened, discoloured or problematic toenails.</p>
-            </article>
+              <article className="card service">
+                <div className="service__ico">
+                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg>
+                </div>
+                <h3>Fungal Nail Care</h3>
+                <p>Assessment and treatment of fungal nail infections to restore healthier nails.</p>
+              </article>
 
-            <article className="card service">
-              <div className="service__ico">
-                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="m18 2 4 4-14 14H4v-4L18 2z" /><path d="m14.5 5.5 4 4" /></svg>
-              </div>
-              <h3>Callus &amp; Corn Removal</h3>
-              <p>Gentle removal of thick, hardened skin caused by friction and pressure, restoring comfort.</p>
-            </article>
+              <article className="card service">
+                <div className="service__ico">
+                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="4" /><path d="M12 2v2" /><path d="M12 20v2" /><path d="m4.93 4.93 1.41 1.41" /><path d="m17.66 17.66 1.41 1.41" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="m6.34 17.66-1.41 1.41" /><path d="m19.07 4.93-1.41 1.41" /></svg>
+                </div>
+                <h3>ToeFX ClearToe Photodisinfection</h3>
+                <p>A gentle, drug-free light therapy that targets stubborn fungal nail infections.</p>
+              </article>
 
-            <article className="card service">
-              <div className="service__ico">
-                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M4 19a6 6 0 0 1 12 0" /><path d="M2 19h18" /><path d="M16 12c2.5 0 4-1.5 4-4s-1.5-4-4-4" /></svg>
-              </div>
-              <h3>Custom Orthotics</h3>
-              <p>Custom-made devices that discreetly support, align and accommodate your feet to improve function.</p>
-            </article>
+              <article className="card service">
+                <div className="service__ico">
+                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2" /></svg>
+                </div>
+                <h3>Diabetic Foot &amp; Wound Care</h3>
+                <p>Regular monitoring, wound care and education to help prevent diabetic complications.</p>
+              </article>
 
-            <article className="card service">
-              <div className="service__ico">
-                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
-              </div>
-              <h3>Ingrown Toenails</h3>
-              <p>Conservative and minor surgical treatment for painful, swollen and infected ingrown nails.</p>
-            </article>
+              <article className="card service">
+                <div className="service__ico">
+                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z" /><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65" /><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65" /></svg>
+                </div>
+                <h3>Corns &amp; Callus Treatments</h3>
+                <p>Gentle removal of thick, hardened skin caused by friction and pressure.</p>
+              </article>
 
-            <article className="card service">
-              <div className="service__ico">
-                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><path d="M12 8v4" /><path d="M12 16h.01" /></svg>
-              </div>
-              <h3>Diabetic Foot Care</h3>
-              <p>Regular monitoring, education and care to help prevent serious complications from diabetes.</p>
-            </article>
+              <article className="card service">
+                <div className="service__ico">
+                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" /><path d="M11 8v6" /><path d="M8 11h6" /></svg>
+                </div>
+                <h3>Wart Removal</h3>
+                <p>Effective treatment of plantar warts and verrucae for clear, healthy skin.</p>
+              </article>
 
-            <article className="card service">
-              <div className="service__ico">
-                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M6 2v6a6 6 0 0 0 12 0V2" /><path d="M6 22v-6a6 6 0 0 1 12 0v6" /><path d="M6 2h12" /><path d="M6 22h12" /></svg>
-              </div>
-              <h3>Compression Stockings</h3>
-              <p>Fitting and supply of medical-grade compression stockings to improve circulation and comfort.</p>
-            </article>
+              <article className="card service">
+                <div className="service__ico">
+                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z" /><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z" /><path d="M16 17h4" /><path d="M4 13h4" /></svg>
+                </div>
+                <h3>Heel Pain (Plantar Fasciitis)</h3>
+                <p>Assessment and treatment to relieve heel pain and plantar fasciitis.</p>
+              </article>
+            </div>
+          </div>
 
-            <article className="card service">
-              <div className="service__ico">
-                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" /><path d="M11 8v6" /><path d="M8 11h6" /></svg>
-              </div>
-              <h3>Warts Removal</h3>
-              <p>Effective treatment of plantar warts and verrucae for clear, healthy skin.</p>
-            </article>
+          <div className="svc-group">
+            <h4 className="svc-group__title">Surgeries</h4>
+            <div className="services">
+              <article className="card service">
+                <div className="service__ico">
+                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="m12 19 7-7 3 3-7 7-3-3z" /><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" /><path d="m2 2 7.586 7.586" /><circle cx="11" cy="11" r="2" /></svg>
+                </div>
+                <h3>Ingrown Toenail Surgery</h3>
+                <p>Partial or permanent correction of painful, recurring ingrown toenails.</p>
+              </article>
 
-            <article className="card service">
-              <div className="service__ico">
-                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M3 3v18h18" /><path d="m19 9-5 5-4-4-3 3" /></svg>
-              </div>
-              <h3>Biomechanical &amp; Gait Analysis</h3>
-              <p>Detailed assessment of how you walk and stand to diagnose and correct foot abnormalities.</p>
-            </article>
+              <article className="card service">
+                <div className="service__ico">
+                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg>
+                </div>
+                <h3>Wart Excision &amp; Needling</h3>
+                <p>Minor procedures to clear stubborn warts that resist other treatments.</p>
+              </article>
+
+              <article className="card service">
+                <div className="service__ico">
+                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="m18 2 4 4" /><path d="m17 7 3-3" /><path d="M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5" /><path d="m9 11 4 4" /><path d="m5 19-3 3" /><path d="m14 4 6 6" /></svg>
+                </div>
+                <h3>Corticosteroid Injections</h3>
+                <p>Targeted injections to reduce inflammation and ease persistent foot pain.</p>
+              </article>
+            </div>
+          </div>
+
+          <div className="svc-group">
+            <h4 className="svc-group__title">Foot Care Products</h4>
+            <div className="services">
+              <article className="card service">
+                <div className="service__ico">
+                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z" /></svg>
+                </div>
+                <h3>Compression Stockings</h3>
+                <p>Fitting and supply of medical-grade compression stockings to improve circulation.</p>
+              </article>
+
+              <article className="card service">
+                <div className="service__ico">
+                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M4 19a6 6 0 0 1 12 0" /><path d="M2 19h18" /><path d="M16 12c2.5 0 4-1.5 4-4s-1.5-4-4-4" /></svg>
+                </div>
+                <h3>Custom-Made Orthotics</h3>
+                <p>Custom devices that support, align and accommodate your feet to improve function.</p>
+              </article>
+            </div>
           </div>
 
           <div className="section__cta">
