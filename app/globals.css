@@ -369,8 +369,12 @@ h3 { font-size: 1.18rem; font-weight: 700; letter-spacing: -.01em; }
   box-shadow: 0 0 0 3px rgba(121,187,195,.18);
 }
 .form__submit { align-self: flex-start; margin-top: 4px; }
+.form__submit:disabled { opacity: .65; cursor: progress; }
+.form__hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
 .form__note { font-size: .86rem; color: var(--muted); background: var(--teal-tint); border: 1px solid var(--teal-soft); border-radius: 10px; padding: 10px 13px; }
 .form__note a { color: var(--teal-deep); font-weight: 600; }
+.form__note--error { background: #fdecec; border-color: #f5c6c6; color: #8a2b2b; }
+.form__note--error a { color: #8a2b2b; }
 
 @media (max-width: 600px) {
   .form__row { grid-template-columns: 1fr; }
