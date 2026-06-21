@@ -238,9 +238,13 @@ h3 { font-size: 1.18rem; font-weight: 700; letter-spacing: -.01em; }
 .services { display: flex; flex-wrap: wrap; gap: 22px; justify-content: center; }
 .services .card { flex: 1 1 240px; max-width: 286px; }
 .service__ico {
-  display: grid; place-items: center; width: 54px; height: 54px; border-radius: 14px;
-  background: linear-gradient(140deg, var(--teal-light), var(--teal)); color: #08272c;
-  margin-bottom: 20px;
+  display: grid; place-items: center; width: 56px; height: 56px; border-radius: 15px;
+  background: var(--teal-tint); border: 1px solid var(--teal-soft);
+  font-size: 28px; line-height: 1; margin-bottom: 20px;
+  transition: transform .3s var(--ease-back);
+}
+@media (hover: hover) and (pointer: fine) {
+  .card:hover .service__ico { transform: scale(1.12) rotate(-4deg); }
 }
 .service h3 { margin-bottom: 9px; }
 .service p { color: var(--muted); font-size: .93rem; }
