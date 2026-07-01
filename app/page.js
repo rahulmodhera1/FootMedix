@@ -120,7 +120,7 @@ export default function Home() {
         <div className="container strip__inner">
           <div className="strip__item"><strong><CountUp end={2} /></strong><span>registered chiropodists</span></div>
           <div className="strip__item"><strong><CountUp end={12} suffix="+" /></strong><span>foot care services</span></div>
-          <div className="strip__item"><strong>Most</strong><span>insurance plans accepted</span></div>
+          <div className="strip__item"><strong>Most</strong><span>insurance plans are accepted</span></div>
         </div>
       </section>
 
